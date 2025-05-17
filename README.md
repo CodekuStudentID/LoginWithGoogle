@@ -1,4 +1,4 @@
-<h3 align="center">Login With Google Account</h3>
+<h2 align="center">Login With Google Account</h2>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -23,7 +23,7 @@ composer require laravel/socialite
 2. buat project baru
 3. ambil screet_id, client_id, redirect_url
 
-# config larave
+# config laravel
 1. tambahkan alias di config/service.php
 2. buat file config/socialite.php tambahkan client_id, screet_id, redirect_url dari file .env
 3. jangan lupa config file .env
