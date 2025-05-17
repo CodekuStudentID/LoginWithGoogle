@@ -44,22 +44,24 @@ composer install
 cp .env.example .env
 php artisan key:generate
 
+```
+
 
 2. Setup database
 Gunakan SQLite (default .env):
 
 ```bash
 DB_CONNECTION=sqlite
-
+```
 
 3. Kemudian Jalankan Migrasi 
 
 ```bash
 php artisan migrate
-
+```
 
 4. Instalasi Socialite
 
 ```bash
 composer require laravel/socialite
-
+```
