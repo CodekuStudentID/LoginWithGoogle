@@ -39,7 +39,7 @@
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <div class="flex items-center justify-between mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
                 {{ __('Already registered?') }}
             </a>
@@ -48,5 +48,12 @@
                 {{ __('Register') }}
             </x-primary-button>
         </div>
+
+        <a href="{{ route('socialite.redirect') }}"
+style="margin-top: 50px;"
+   class="flex items-center justify-center gap-2 bg-white text-gray-700 border border-gray-300 hover:border-gray-500 hover:shadow-md font-medium py-2 px-4 rounded-lg transition duration-300 w-full max-w-xs">
+    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5">
+    <span>Login with Google</span>
+</a>
     </form>
 </x-guest-layout>
